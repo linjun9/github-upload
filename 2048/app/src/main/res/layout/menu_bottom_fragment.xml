@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="80dp"
+            android:id="@+id/new_game"
+            android:layout_marginBottom="28dp"
+            android:layout_above="@+id/rate_us"
+            android:layout_alignStart="@+id/rate_us"
+            android:onClick="newGame" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/rate_us"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="322dp"
+            android:id="@+id/rate_us"
+            android:layout_marginBottom="41dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/start_continue"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="197dp"
+            android:id="@+id/start"
+            android:layout_alignBottom="@+id/new_game"
+            android:layout_alignStart="@+id/new_game"
+            android:layout_marginBottom="70dp"
+            android:onClick="start" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
